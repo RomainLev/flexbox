@@ -1,0 +1,23 @@
+@import "(reset.css)";
+
+#flexMachin {
+  display: flex;
+  justify-content: flex-end;
+ }
+#flexMachin div {
+  padding: 10px 50px;
+  margin: 0px 10px;
+
+}
+#flexMachin div:nth-child(1) {
+  background-color: lime;
+}
+#flexMachin div:nth-child(2) {
+  background-color: cyan;
+}
+#flexMachin div:nth-child(3) {
+  background-color: magenta;
+}
+#flexMachin div:nth-child(4) {
+  background-color: yellow;
+}

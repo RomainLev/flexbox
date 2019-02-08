@@ -3,7 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Flexbox</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="./assets/css/master.css" />
+    <script type="text/javascript">
+      document.cookie = "nom=Michel";
+      document.cookie = "age=42";
+      document.cookie = "voiture:Renault Safrane"
+
+      var toto = document.cookie;
+      var tata = toto.split (";");
+      var reponse ="<ul>";
+      for (var i = 0; i < tata.length; i++) {
+        reponse += "<li>" + tata[i] + "</li>";
+      }
+      reponse += "</ul>";
+
+      document.write(reponse);
+    </script>
   </head>
   <body>
     <div id="flexMachin">

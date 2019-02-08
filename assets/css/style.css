@@ -2,7 +2,10 @@
 
 #flexMachin {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: #999;
  }
 #flexMachin div {
   padding: 10px 50px;
@@ -11,13 +14,29 @@
 }
 #flexMachin div:nth-child(1) {
   background-color: lime;
+  color: white;
+  flex-grow: 8;
 }
 #flexMachin div:nth-child(2) {
   background-color: cyan;
+  flex-grow: 1;
 }
 #flexMachin div:nth-child(3) {
   background-color: magenta;
+  flex-grow: 4
 }
 #flexMachin div:nth-child(4) {
   background-color: yellow;
+  flex-grow: 2;
+}
+@media screen and (max-width: 400px) {
+  #flexMachin {
+    background: #F00;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  #flexMachin{
+    background: #999;
+  }
 }
